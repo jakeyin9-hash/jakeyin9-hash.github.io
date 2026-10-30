@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>宏宇 HONGYU | Personal Website</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:#f5f4f0;
+  color:#171717;
+  font-family:Arial,"Microsoft YaHei",sans-serif;
+}
+a{color:inherit;text-decoration:none}
+nav{
+  height:75px;padding:0 7%;
+  display:flex;align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #ddd;
+}
+.logo{font-size:22px;font-weight:800;letter-spacing:3px}
+.navlinks{display:flex;gap:25px;font-size:12px;color:#666}
+.hero{
+  min-height:590px;padding:100px 9% 80px;
+  background:#111;color:#fff;
+  display:flex;flex-direction:column;
+  justify-content:center;
+}
+.eyebrow{font-size:11px;letter-spacing:5px;color:#999}
+.hero h1{
+  font-size:clamp(65px,14vw,150px);
+  letter-spacing:-8px;line-height:1;
+  margin:35px 0;
+}
+.hero h1 span{color:#888}
+.hero p{font-size:15px;color:#aaa;line-height:2}
+.hero .more{
+  margin-top:45px;width:max-content;
+  padding:14px 25px;border:1px solid #777;
+  font-size:12px;letter-spacing:2px;
+}
+section{padding:90px 9%}
+.label{font-size:11px;letter-spacing:4px;color:#888}
+h2{font-size:38px;margin:20px 0 35px}
+.about{
+  max-width:650px;font-size:15px;
+  line-height:2.3;color:#555;
+}
+.grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:18px;margin-top:40px;
+}
+.work{
+  background:#e6e4df;min-height:210px;
+  padding:28px;display:flex;
+  flex-direction:column;justify-content:space-between;
+  transition:.3s;
+}
+.work:hover{background:#dedbd4;transform:translateY(-4px)}
+.work .number{font-size:12px;color:#888}
+.work h3{font-size:24px}
+.work p{font-size:12px;color:#777;margin-top:8px}
+.explore{background:#e9e7e1}
+.explore p{line-height:2.2;color:#555;max-width:600px}
+.contact{background:#111;color:white}
+.contact p{color:#aaa;line-height:2}
+footer{
+  padding:25px 9%;background:#111;
+  border-top:1px solid #333;color:#777;
+  font-size:11px;letter-spacing:1px;
+}
+@media(max-width:600px){
+ nav{padding:0 6%}
+ .navlinks{gap:12px;font-size:10px}
+ .hero{min-height:520px;padding:80px 7%}
+ .hero h1{letter-spacing:-5px}
+ section{padding:70px 7%}
+ h2{font-size:32px}
+ .grid{grid-template-columns:1fr}
+ .work{min-height:180px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">HONGYU.</div>
+  <div class="navlinks">
+    <a href="#about">关于</a>
+    <a href="#works">作品</a>
+    <a href="#explore">探索</a>
+    <a href="#contact">联系</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">PERSONAL WEBSITE / 2026</div>
+  <h1>HONG<span>YU.</span></h1>
+  <p>设计 · 创意 · 探索<br>
+  保持好奇，持续创造。<br>
+  Welcome to my world.</p>
+  <a class="more" href="#about">EXPLORE MORE ↗</a>
+</header>
+
+<section id="about">
+  <div class="label">01 / ABOUT ME</div>
+  <h2>关于我</h2>
+  <div class="about">
+    我是宏宇。<br>
+    一个对设计、科技、艺术与世界充满好奇的人。<br>
+    我喜欢观察事物，探索新的可能性，
+    并尝试把脑海中的想法变成现实。<br>
+    这里是我的个人空间，记录我的作品、
+    思考以及不断向前的过程。
+  </div>
+</section>
+
+<section id="works">
+  <div class="label">02 / SELECTED WORKS</div>
+  <h2>我的作品</h2>
+  <div class="grid">
+    <div class="work">
+      <div class="number">PROJECT / 001</div>
+      <div><h3>视觉设计</h3><p>Visual Communication</p></div>
+    </div>
+    <div class="work">
+      <div class="number">PROJECT / 002</div>
+      <div><h3>服装创意</h3><p>Fashion & Creation</p></div>
+    </div>
+    <div class="work">
+      <div class="number">PROJECT / 003</div>
+      <div><h3>品牌探索</h3><p>Brand Identity</p></div>
+    </div>
+    <div class="work">
+      <div class="number">PROJECT / 004</div>
+      <div><h3>数字创意</h3><p>Digital Experience</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="explore" id="explore">
+  <div class="label">03 / EXPLORATION</div>
+  <h2>保持探索</h2>
+  <p>
+    世界很大，值得探索的事情还有很多。<br>
+    科技、艺术、设计、自然、宇宙。<br>
+    不被固有边界限制，持续学习，
+    持续思考，持续创造。
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <div class="label">04 / GET IN TOUCH</div>
+  <h2>保持联系。</h2>
+  <p>每一次交流，都可能产生新的可能。</p>
+  <p style="margin-top:25px">HONGYU · PERSONAL SPACE</p>
+</section>
+
+<footer>
+  © 2026 HONGYU. ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>
